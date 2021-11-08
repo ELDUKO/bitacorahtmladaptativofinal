@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>BITACORA PRIMER PARCIAL.</title>
+  </head>
+
+  <body>
+    <!--<header>
+      <h1>BITÁCORA PRIMER PARCIAL HTML ADAPTATIVO.</h1>
+      <ul>
+        <li class="lista"><a href="#posicion">Propiedad Position</a></li>
+        <li class="lista"><a href="#referencia">Referenciar con CSS</a></li>
+        <li class="lista"><a href="#especificidad">Especificidad</a></li>
+        <li class="lista"><a href="#animacion">Animacion con CSS</a></li>
+        <li class="lista"><a href="#basicos">JS conceptos básicos</a></li>
+        <li class="lista"><a href="#dom">DOM HTML</a></li>
+        <li class="lista"><a href="#htmlconjs">Encontrar HTML con JS</a></li>
+        <li class="lista"><a href="#style">Propiedad style</a></li>
+        <li class="lista"><a href="#events">Eventos con JS</a></li>
+        <li class="lista"><a href="#classlist">Classlist</a></li>
+      </ul>
+    </header> !-->
+    
+
+    <section class="contenedorpadre">
+      <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-menu">
+          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div class="content">
+          <div class="logo"><a href="#">BITÁCORA</a></div>
+            <ul class="links">
+              <li>
+                <a href="#" class="desktop-link">Unidad I</a>
+                <input type="checkbox" id="show-features">
+                <label for="show-features">Unidad I</label>
+                <ul>
+                  <li><a href="index.html">Propiedad Position</a></li>
+                  <li><a href="#referencia">Referenciar con CSS</a></li>
+                  <li><a href="#especificidad">Especificidad</a></li>
+                  <li><a href="#animacion">Animacion con CSS</a></li>
+                  <li><a href="#basicos">JS conceptos básicos</a></li>
+                  <li><a href="#dom">DOM HTML</a></li>
+                  <li><a href="#htmlconjs">Encontrar HTML con JS</a></li>
+                  <li><a href="#style">Propiedad Style</a></li>
+                  <li><a href="#events">Eventos con JS</a></li>
+                  <li><a href="#classlist">Classlist</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="UnidadII.html" class="desktop-link">Unidad II</a>
+                <input type="checkbox" id="show-unit">
+                <label for="show-unit">Unidad II</label>
+                <ul>
+                  <li><a href="UnidadII.html">Tipografía Responsive</a></li>
+                  <li><a href="UnidadII.html">Formularios Responsivos</a></li>
+                  <li><a href="UnidadII.html">Look & Feel</a></li>
+                  <li><a href="UnidadII.html">Patrones de RWD</a></li>
+                  <li><a href="UnidadII.html">Unidades de medida</a></li>
+                  <li><a href="UnidadII.html">Reset y Normalize</a></li>
+                  <li><a href="UnidadII.html">SVG</a></li>
+                </ul>
+              </li>
+  
+              <li>
+                <a href="#" class="desktop-link">Unidad III</a>
+                <input type="checkbox" id="show-services">
+                <label for="show-services">Unidad III</label>
+                <ul>
+                    <li><a href="unidadIII.html">Mobile First</a></li>
+                    <li><a href="unidadIII.html">Módulo Flexbox-Padre</a></li>
+                    <li><a href="unidadIII.html">Módulo Flexbox-Hijos</a></li>
+                    <li><a href="unidadIII.html">Variables CSS</a></li>
+                    <li><a href="unidadIII.html">Frameworks</a></li>
+
+                </ul>
+            </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      
+      <article class="position" id="posicion">
+        <h1 class="titulo">Propiedad Position</h1>
+        <p>
+          La propiedad position de CSS especifica cómo un elemento es
+          posicionado en el documento. Las propiedades top, right, bottom, y
+          left determinan la ubicación final de los elementos posicionados.
+        </p>
+        <h2 class="tipos">TIPOS DE POSICIONAMIENTO</h2>
+        <br />
+        <ul class="tipo">
+          <li>
+            Un elemento posicionado es un elemento cuyo valor computado de
+            position es relative, absolute, fixed, o sticky. (En otras palabras,
+            cualquiera excepto static).
+          </li>
+          <br /><br />
+          <li>
+            Un elemento posicionado relativamente es un elemento cuyo valor
+            computado de position es relative. Las propiedades top y bottom
+            especifican el desplazamiento vertical desde su posición original;
+            las propiedades left y right especifican su desplazamiento
+            horizontal. Los elementos posicionados relativamente son desplazados
+            una cantidad dada de su posición normal en el documento, pero sin
+            que su desplazamiento afecte a otros elementos.
+          </li>
+          <br /><br />
+          <li>
+            Un elemento posicionado absolutamente es un elemento cuyo valor
+            computado de position es absolute o fixed. Las propiedades top,
+            right, bottom, y left especifican el desplazamiento desde los bordes
+            del bloque contenedor del elemento. (El bloque contenedor es el
+            ancestro relativo al cual el elemento está posicionado). Si el
+            elemento tiene márgenes, se agregarán al desplazamiento. el elemento
+            establece un nuevo contexto de formato de bloque para su contenido.
+            Los elementos posicionados relativamente se mantienen en el flujo
+            normal del documento. Por el contrario, un elemento posicionado
+            absolutamente es removido del flujoñ de esta manera, los demás
+            elementos se posicionan como si el mismo no existiera. El elemento
+            posicionado absolutamente se posiciona relativamente a suancestro
+            posicionado más cercano (es decir, el ancestro más cercano que no es
+            static). Si no hay ningún ancestro posicionado se ubica relativo al
+            bloque contenedor inicial.
+          </li>
+          <br /><br />
+          <li>
+            Un elemento posicionado fijamente es un elemento cuyo valor de
+            position computado es sticky. Es tratado como un elemento
+            posicionado relativamente hasta que su bloque contenedor cruza un
+            límite establecido (como por ejemplo dando a top cualquier valor
+            distinto de auto), dentro de su flujo principal (o el contenedor
+            dentro del cual se mueve), desde el cual es tratado como "fijo"
+            hasta que alcance el borde opuesto de su bloque contenedor. El
+            posicionamiento fijo es similar al posicionamiento absoluto, con la
+            excepción de que el bloque contenedor del elemento es el viewport.
+            Esto puede usarse para crear un elemento flotante que se mantiene en
+            la misma posición independientemente del desplazamiento.
+          </li>
+          <br /><br />
+        </ul>
+        <br />
+        <br />
+      </article>
+      <article class="position" id="referencia">
+        <h1 class="titulo">Referenciar con CSS</h1>
+        <br />
+        <p>
+          La Referencia CSS muestra la sintáxis básica de una regla CSS; lista
+          todas las propiedades estándares CSS, pseudo-classes y
+          pseudo-elementos, reglas-at, unidades, y selectores, todos juntos en
+          orden alfabético, así como los selectores por tipo; y le permitirá
+          acceso rápido a la información detallada de cada uno de ellos. No solo
+          lista las propiedades de CSS 1 y CSS 2.1, sino que también es una
+          referencia de CSS3 que enlaza cualquier propiedad y concepto de CSS3
+          estandarizado, o ya establecido. También incluye una breve referencia
+          DOM-CSS / CSSOM.
+        </p>
+        <br />
+        <br />
+        <br />
+      </article>
+      <article class="position" id="especificidad">
+        <h1 class="titulo">Especificidad</h1>
+        <p>
+          La especificidad es la manera mediante la cual los navegadores deciden
+          qué valores de una propiedad CSS son más relevantes para un elemento
+          y, por lo tanto, serán aplicados. La especificidad está basada en las
+          reglas de coincidencia que están compuestas por diferentes tipos de
+          selectores CSS. La especificidad es un peso (importancia o valor) que
+          se le asigna a una declaración CSS dada, determinada por el número
+          correspondiente de cada tipo de selector. Cuando varias declaraciones
+          tienen igual especificidad, se aplicará al elemento la última
+          declaración encontrada en el CSS. La especificidad solo se aplica
+          cuando el mismo elemento es objetivo de múltiples declaraciones. Según
+          las reglas de CSS, en caso de que un elemento sea objeto de una
+          declaración directa, esta siempre tendrá preferencia sobre las reglas
+          heredadas de su ancestro. <br />
+          La siguiente lista de tipos de selectores incrementa en función de la
+          especificidad:
+          <br /><br />
+          Selectores de tipo (p.e., h1) y pseudo-elementos (p.e., ::before).
+          <br /><br />
+          Selectores de clase (p.e., .ejemplo), selectores de atributos (p.e.,
+          [type="radio"]) y pseudo-clases (p.e., :hover). <br /><br />
+          Selectores de ID (p.e., #ejemplo). <br /><br />
+
+          El selector universal (*), los combinadores (+, >, ~, ' ', || (en-US))
+          y la pseudo-clase de negación (:not()) no tienen efecto sobre la
+          especificidad. (Sin embargo, los selectores declarados dentro de
+          :not() si lo tienen.)
+        </p>
+        <br />
+        <br />
+        <br />
+      </article>
+      <article class="position" id="animacion">
+        <h1 class="titulo">Animacion con CSS</h1>
+        <p>
+          Las animaciones CSS3 permiten animar la transición entre un estilo CSS
+          y otro. Las animaciones constan de dos componentes: un estilo que
+          describe la animación CSS y un conjunto de fotogramas que indican su
+          estado inicial y final, así como posibles puntos intermedios en la
+          misma.
+          <br />
+          Las animaciones CSS tienen tres ventajas principales sobre las
+          técnicas tradicionales de animación basada en scripts:
+          <br /><br />
+          Son muy fáciles de usar para animaciones sencillas, puedes hacerlo
+          incluso sin tener conocimientos de Javascript.<br /><br />
+          La animación se muestra correctamente, incluso en equipos poco
+          potentes. Animaciones simples realizadas en Javascript pueden verse
+          mal (a menos que estén muy bien hechas). El motor de renderizado puede
+          usar técnicas de optimización como el "frame-skipping" u otras
+          técnicas para que la ejecución de la animación se vea tan suave como
+          sea posible. <br /><br />
+          Al ser el navegador quien controle la secuencia de la animación,
+          permitimos que optimice el rendimiento y eficiencia de la misma, por
+          ejemplo, reduciendo la frecuencia de actualización de la animación
+          ejecutándola en pestañas que no estén visibles.<br /><br />
+          Para crear una secuencia de animación CSS, tú estilizarás el elemento
+          que quieras animar con la propiedad animation y sus sub-propiedades.
+          Con ellas podemos no solo configurar el ritmo y la duración de la
+          animación sino otros detalles sobre la secuencia de la animación.
+        </p>
+        <br />
+        <br />
+        <br />
+      </article>
+      <article class="position" id="basicos">
+        <h1 class="titulo">JS conceptos básicos</h1>
+        <p>
+          JavaScript es un lenguaje de programación multiplataforma orientado a
+          objetos que se utiliza para hacer que las páginas web sean
+          interactivas (p. ej., Que tienen animaciones complejas, botones en los
+          que se puede hacer clic, menús emergentes, etc.). También hay
+          versiones de JavaScript de lado del servidor más avanzadas, como
+          Node.js, que te permiten agregar más funcionalidad a un sitio web que
+          simplemente descargar archivos (como la colaboración en tiempo real
+          entre varias computadoras). Dentro de un entorno (por ejemplo, un
+          navegador web), JavaScript se puede conectar a los objetos de su
+          entorno para proporcionar control programático sobre ellos. JavaScript
+          contiene una biblioteca estándar de objetos, como Array, Date y Math,
+          y un conjunto básico de elementos del lenguaje como operadores,
+          estructuras de control y declaraciones. El núcleo de JavaScript se
+          puede extender para una variedad de propósitos completándolo con
+          objetos adicionales; por ejemplo: JavaScript de lado del cliente
+          extiende el núcleo del lenguaje al proporcionar objetos para controlar
+          un navegador y su Modelo de objetos de documento (DOM por Document
+          Object Model). Por ejemplo, las extensiones de lado del cliente
+          permiten que una aplicación coloque elementos en un formulario HTML y
+          responda a eventos del usuario, como clics del mouse, formularios para
+          ingreso de datos y navegación de páginas. JavaScript de lado del
+          servidor amplía el núcleo del lenguaje al proporcionar objetos
+          relevantes para ejecutar JavaScript en un servidor. Por ejemplo, las
+          extensiones de lado del servidor permiten que una aplicación se
+          comunique con una base de datos, brinde continuidad de información de
+          una invocación a otra de la aplicación o realice manipulación de
+          archivos en un servidor. Esto significa que en el navegador,
+          JavaScript puede cambiar la apariencia de la página web (DOM). Y, del
+          mismo modo, el JavaScript de Node.js en el servidor puede responder a
+          solicitudes personalizadas desde el código escrito en el navegador.
+        </p>
+        <br />
+        <br />
+        <br />
+      </article>
+      <article class="position" id="dom">
+        <h1 class="titulo">DOM HTML</h1>
+        <p>
+          El modelo de objeto de documento (DOM) es una interfaz de programación
+          para los documentos HTML y XML. Facilita una representación
+          estructurada del documento y define de qué manera los programas pueden
+          acceder, al fin de modificar, tanto su estructura, estilo y contenido.
+          El DOM da una representación del documento como un grupo de nodos y
+          objetos estructurados que tienen propiedades y métodos. Esencialmente,
+          conecta las páginas web a scripts o lenguajes de programación. Una
+          página web es un documento. Éste documento puede exhibirse en la
+          ventana de un navegador o también como código fuente HTML. Pero, en
+          los dos casos, es el mismo documento. El modelo de objeto de documento
+          (DOM) proporciona otras formas de presentar, guardar y manipular este
+          mismo documento. El DOM es una representación completamente orientada
+          al objeto de la página web y puede ser modificado con un lenguaje de
+          script como JavaScript. El W3C DOM estándar forma la base del
+          funcionamiento del DOM en muchos navegadores modernos. Varios
+          navegadores ofrecen extensiones más allá del estándar W3C, hay que ir
+          con extremo cuidado al utilizarlas en la web, ya que los documentos
+          pueden ser consultados por navegadores que tienen DOMs diferentes.
+        </p>
+        <br />
+        <br />
+        <br />
+      </article>
+      <article class="position" id="htmlconjs">
+        <h1 class="titulo">Encontar HTML con JS</h1>
+        <p>
+          getElementsByClass <br> Name Retorna un objecto similar a un
+          array de los elementos hijos que tengan todos los nombres de clase
+          indicados. Cuando es llamado sobre el objeto document , la busqueda se
+          realiza en todo el document, incluido el nodo raíz. También puedes
+          llamar ElementsByClassName sobre cualquier elemento; en ese caso
+          retornara sólo los elementos hijos del elemento raíz indicado que
+          contengan los nombres de clase indicados. <br /><br />
+          getElementById: Devuelve una referencia al elemento por su
+          ID. <br /><br />
+          getElementsByTagName: Devuelve una lista de elementos con un
+          nombre determinado. Se busca en todo el documento, incluyendo el nodo
+          raíz. <br /><br />
+          getElementsByName Devuelve una colección nodelist con un
+          nombre determinado en el documento HTML.
+        </p>
+        <br />
+        <br />
+        <br />
+      </article>
+      <article class="position" id="style">
+        <h1 class="titulo">Propiedad Style</h1>
+        <p>
+          style - estilo. Es el elemento encargado de indicar la información de
+          estilo. <br /><br />
+          Sus etiquetas son: &lt;style> y &lt;/style> (ambas obligatorias).
+          <br />
+          Está definido como: Elemento de cabecera. <br />
+          Crea una caja: No. <br />
+          Puede contener: Declaraciones de estilo. <br />
+          Debe ser contenido por: Elementos head.
+        </p>
+        <br />
+        <br />
+        <br />
+      </article>
+      <article class="position" id="events">
+        <h1 class="titulo">Eventos con JS</h1>
+        <p>
+          Los eventos se envían para notificar al código de cosas interesantes
+          que han ocurrido. Cada evento está representado por un objeto que se
+          basa en la interfaz Event, y puede tener campos y/o funciones
+          personalizadas adicionales para obtener más información acerca de lo
+          sucedido. Los eventos pueden representar cualquier cosa desde las
+          interacciones básicas del usuario para notificaciones automatizadas de
+          las cosas que suceden en el modelo de representación. Eventos Estándar
+          Estos eventos se definen en las especificaciones Web oficiales, y
+          deben ser comunes en todos los navegadores. Cada evento aparece junto
+          con la interfaz que representa el objeto enviado a los destinatarios
+          del evento (por lo que puede encontrar información sobre los datos que
+          se incluyen en cada caso), así como un enlace a la especificación o
+          especificaciones que definen el evento. <br /><br />
+          En JavaScript, la interacción con el usuario se consigue mediante la
+          captura de los eventos que éste produce. Un evento es una acción del
+          usuario ante la cual puede realizarse algún proceso (por ejemplo, el
+          cambio del valor de un formulario, o la pulsación de un enlace). Los
+          eventos se capturan mediante los manejadores de eventos. El proceso a
+          realizar se programa mediante funciones JavaScript llamadas por los
+          manejadores de eventos.
+        </p>
+        <br />
+        <br />
+        <br />
+      </article>
+      <article class="position" id="classlist">
+        <h1 class="titulo">Classlist</h1>
+        <p>
+          a propiedad de sólo lectura Element.classList devuelve una colección
+          activa de DOMTokenList de los atributos de clase del elemento. Usar
+          classList es una forma práctica de acceder a la lista de clases de un
+          elemento como una cadena de texto delimitada por espacios a través de
+          element.className.
+        </p>
+        <br />
+        <br />
+        <br />
+      </article>
+
+      <footer>
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social">
+          <li><a href="https:facebook.com"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="https:twitter.com"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="https:linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a href="https:instagram.com"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html">principio de pagina</a></li>
+        </ul>
+        <p>©2021 López José Ignacio | Todos los derechos reservados</p>
+      </footer>
+      
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </section>
+  </body>
+</html>

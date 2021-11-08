@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Unidad II</title>
+  </head>
+  <body>
+    <section class="eltodo">
+      <!--<header>
+        <h1>BITÁCORA SEGUNDO PARCIAL HTML ADAPTATIVO.</h1>
+        <ul>
+          <li class="lista"><a href="#tipografia">Tipografía responsive</a></li>
+          <li class="lista">
+            <a href="#formularios">Formularios responsivos</a>
+          </li>
+          <li class="lista"><a href="#lookndfeel">Look & Feel</a></li>
+          <li class="lista"><a href="#rwd">Patrones de RWD</a></li>
+          <li class="lista"><a href="#unidades">Unidades de medida</a></li>
+          <li class="lista"><a href="#normalize">Reset y normalize</a></li>
+          <li class="lista"><a href="#svg">SVG</a></li>
+        </ul>
+      </header> !-->
+      <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-menu">
+          <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+          <div class="content">
+          <div class="logo"><a href="#">BITÁCORA</a></div>
+            <ul class="links">
+              <li>
+                <a href="index.html" class="desktop-link">Unidad I</a>
+                <input type="checkbox" id="show-features">
+                <label for="show-features">Unidad I</label>
+                <ul>
+                  <li><a href="index.html">Propiedad Position</a></li>
+                  <li><a href="index.html">Referenciar con CSS</a></li>
+                  <li><a href="index.html">Especificidad</a></li>
+                  <li><a href="index.html">Animacion con CSS</a></li>
+                  <li><a href="index.html">JS conceptos básicos</a></li>
+                  <li><a href="index.html">DOM HTML</a></li>
+                  <li><a href="index.html">Encontrar HTML con JS</a></li>
+                  <li><a href="index.html">Propiedad Style</a></li>
+                  <li><a href="index.html">Eventos con JS</a></li>
+                  <li><a href="index.html">Classlist</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#" class="desktop-link">Unidad II</a>
+                <input type="checkbox" id="show-unit">
+                <label for="show-unit">Unidad II</label>
+                <ul>
+                  <li><a href="#tipografia">Tipografía Responsive</a></li>
+                  <li><a href="#formularios">Formularios Responsivos</a></li>
+                  <li><a href="#lookndfeel">Look & Feel</a></li>
+                  <li><a href="#rwd">Patrones de RWD</a></li>
+                  <li><a href="#unidades">Unidades de medida</a></li>
+                  <li><a href="#normalize">Reset y Normalize</a></li>
+                  <li><a href="#svg">SVG</a></li>
+                </ul>
+              </li>
+
+              <li>
+                <a href="#" class="desktop-link">Unidad III</a>
+                <input type="checkbox" id="show-services">
+                <label for="show-services">Unidad III</label>
+                <ul>
+                    <li><a href="unidadIII.html">Mobile First</a></li>
+                    <li><a href="unidadIII.html">Módulo Flexbox-Padre</a></li>
+                    <li><a href="unidadIII.html">Módulo Flexbox-Hijos</a></li>
+                    <li><a href="unidadIII.html">Variables CSS</a></li>
+                    <li><a href="unidadIII.html">Frameworks</a></li>
+
+                </ul>
+            </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <article class="tema" id="tipografia">
+        <h1 class="titulos">Tipografía responsive</h1>
+        <p class="testo">
+          El texto es parte imprescindible de la web. Productos, servicios, lo
+          que haces, lo que se quiere lograr con el proyecto web se muestran
+          mediante el texto. <br /><br />
+          ¿Cuál es entonces el primer objetivo que debemos lograr con el
+          texto?<br>
+          • Lo mas importante es que el texto se pueda leer. <br><br>
+        </p>
+        <h2 class="subtitulo">La legibilidad</h2>
+        <p class="testo">
+          <br>
+          Se define como: cualidad de lo que es legible. <br><br>
+          • Básicamente es la facilidad con que se puede leer y comprender un
+          texto. <br>
+          • En un sentido más amplio es la aptitud de un texto de ser leído
+          fácil y cómodamente, y esta aptitud en la web hace referencia a la
+          familia tipográfica, color y contraste de la tipografía, líneas de
+          palabras, párrafos y otros elementos como imágenes, videos,
+          animaciones etc. <br>
+          <br>
+          Estudios concluyen que es un error costoso si el texto es menor a
+          16px. <br>
+          <br>
+          • 16 píxeles no es un tamaño grande, es el tamaño por defecto en
+          muchos navegadores. 16px o 18px deben ser las primeras medidas a
+          probar. <br>
+          • Con un consumo de contenido cada vez mayor en móvil, el tamaño de
+          fuente para móvil también debe permitir una lectura cómoda. Los
+          usuarios suelen tener el texto más cerca de los ojos cuando navegan en
+          móvil que cuando lo hacen en escritorio.
+        </p>
+      </article>
+
+      <article class="tema" id="formularios">
+        <h1 class="titulos">Formularios responsivos</h1>
+        <p class="testo">
+          Un formulario HTML es una sección de un documento que contiene
+          contenido normal, código, elementos especiales llamados controles
+          (casillas de verificación (checkboxes), radiobotones (radio buttons),
+          menúes, etc.), y rótulos (labels) en esos controles.<br><br>
+        </p>
+        <div class="title"></div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Nombre Completo</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Nombre de usuario</span>
+            <input type="text" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Correo Electrónico</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Número de telefono</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Contraseña</span>
+            <input type="text" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirmar Contraseña</span>
+            <input type="text" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Género</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Masculino</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Femenino</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefiero no decirlo</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Registrarme">
+        </div>
+      </form>
+    </div>
+  </div>
+      </article>
+
+      <article class="tema" id="lookndfeel">
+        <h1 class="titulos">Look & Feel</h1>
+        <p class="testo">
+          El Look and feel es una expresión inglesa que puede tener diferentes significados, dependiendo del contexto en que se utilice.
+
+          Significa textualmente el "aspecto y tacto" de determinados productos.
+          
+          En contextos de desarrollo, el significado más apropiado sería “aspecto y comportamiento”.
+
+          El look and feel de un proyecto web también se puede describir como su “personalidad”. La cual debe coincidir con la actitud la empresa y sus objetivos sin dejar de encajar en las expectativas del usuario.
+          Aunque existe cierta libertad de diseño, los usuarios pueden confundirse por los proyectos web cuyo Look&Feel  no cumple con sus expectativas para determinada empresa o industria. <br> <br>
+          El look&feel puede ser descrito usando adjetivos. Por ejemplo: <br> <br>
+          Amistoso. <br>
+          Accesible. <br>
+          Profesional. <br>
+          Experimentado.<br>
+          Exclusivo.<br>
+          Innovador.<br>
+          Elegante.<br>
+          Alta tecnología.<br>
+          Poderoso.
+
+          
+        </p>
+        <h2 class="subtitulo">Look</h2>
+        <p class="testo">
+          <br>
+          El aspecto o look de las interfaces se define por los siguientes componentes: <br> <br>
+          Paleta de colores <br>
+          Imágenes <br>
+          Diseño <br>
+          Opciones de fuente <br>
+          Estilo general <br>
+          Disposición de los elementos
+        </p>
+
+        <h2 class="subtitulo">Feel</h2>
+        <p class="testo">
+          <br>
+          El comportamiento de las interfaces está influido por la interacción, que se determina por las siguientes características: <br><br>
+          El movimiento y la respuesta de los componentes dinámicos, como menús desplegables, botones, formas y galerías <br>
+          Los efectos de sonido <br>
+          La rapidez con la que las páginas y las imágenes se cargan <br>
+        </p>
+      </article>
+
+      <article class="tema" id="rwd">
+        <h1 class="titulos">Patrones de RWD</h1>
+        <p class="testo">
+          <br>
+          Los patrones de diseño web adaptables evolucionan rápidamente, pero existen varios
+          patrones establecidos que funcionan bien en los diferentes equipos de escritorio y
+          dispositivos móviles. <br> <br>
+          La mayoría de los diseños que se usan en las páginas web responsivas se pueden
+          categorizar dentro de cinco clases de patrones: <br> <br>
+        </p>
+        <h2 class="subtitulo">Mostly Fluid</h2>
+        <p class="testo">
+          <br>
+          El órigen del nombre “mayormente líquido” es debido a que la
+          estructura principal de los layouts no cambia realmente hasta
+          dimensiones mobile donde se aplica la caída de columna. Como
+          hemos comprobado las columnas se vuelven liquidas con su
+          contenido hasta alcanzar el ancho máximo. <br>
+          El patrón Mostly fluid consiste, principalmente, en una cuadrícula
+          fluida. Por lo general, en las pantallas grandes o medianas se
+          mantiene el mismo tamaño y simplemente se ajustan los márgenes
+          en las más anchas. <br><br>
+          En la vista más pequeña, cada div de contenido se apila según vaya
+          creciendo la pantalla, los distintos bloques se agrupan ocupando toda
+          la pantalla disponible. <br><br>
+          En pantallas más grandes, el diseño es el mismo pero queda
+          agrupado dentro de un contenedor que queda centrado en la página
+          con un tamaño fijo de ancho. <br><br>
+          Una de las mayores ventajas de este patrón es que, en general, solo
+          se necesita un punto de interrupción entre las pantallas grandes y las
+          pequeñas. <br> <br>
+        </p>
+        <img src="img/mustly fluid.png" alt="Mostly fluid">
+
+        <h2 class="subtitulo">Column Drop</h2>
+        <p class="testo">
+          <br>
+          A diferencia del patrón Mostly Fluid, el tamaño total de los elementos
+          en esta disposición tiende a permanecer constante. <br>
+          En este diseño la adaptación a distintos tamaños de pantalla se basa
+          en apilar las columnas. <br><br>
+          En el caso de los diseños con varias columnas de ancho completo,
+          durante el proceso de colocación de columnas éstas únicamente se
+          colocan de forma vertical debido a que el ancho de la ventana es
+          demasiado reducido para el contenido. <br><br>
+          En un momento dado, todas las columnas se apilan verticalmente. La
+          selección de puntos de interrupción para este patrón de diseño
+          depende del contenido y cambia para cada diseño. <br><br>
+          Como sucede con los ejemplos que son principalmente fluidos, el
+          contenido se coloca verticalmente en la vista más pequeña, pero a
+          medida que se expande la pantalla a más de 600 píxeles, los divde
+          contenido principal y secundario ocupan todo el ancho de la pantalla. <br><br>
+          El orden de los divse configura con la propiedad CSS de orden. Con
+          800 píxeles, se muestran los tres divde contenido en todo el ancho de
+          la pantalla. <br><br>
+        </p>
+        <img src="img/Column drop.png" alt="Column Drop">
+
+        <h2 class="subtitulo">Layout Shifter</h2>
+        <p class="testo">
+          <br>
+          El patrón Layout shifter es el más adaptable, ya que posee varios
+          puntos de interrupción en diferentes anchos de pantalla. <br><br>
+          La clave para este diseño es el desplazamiento del contenido, en
+          lugar de su reprocesamiento y colocación debajo de otras columnas. <br><br>
+          Debido a las diferencias significativas entre cada punto de
+          interrupción principal, es más complejo de mantener, y es posible que
+          se deban realizar cambios dentro de los elementos, no solo en el
+          diseño de contenido general. <br> <br>
+          Este es uno de los patrones más complejos. Consiste en mover los
+          bloques de contenido cambiando totalmente el Layout, de ahí el
+          nombre del patrón. <br><br>
+          En las pantallas más pequeñas, el contenido se apila verticalmente,
+          pero cambia considerablemente a medida que se agranda la pantalla,
+          con un div a la izquierda y dos div apilados a la derecha. <br><br>
+        </p>
+        <img src="img/shift layout.png" alt="Layout Shifter">
+
+        <h2 class="subtitulo">Tiny Tweaks</h2>
+        <p class="testo">
+          <br>
+          El patrón Tiny tweaks permite realizar pequeños cambios en el
+          diseño, como ajustar el tamaño de la fuente, cambiar el tamaño
+          de las imágenes o desplazar el contenido de maneras muy poco
+          significativas. <br><br>
+          Funciona correctamente en diseños con una sola columna,
+          como los sitios web lineales de una sola página y los artículos
+          con mucho texto <br><br>
+        </p>
+        <img src="img/tiny tweaks.png" alt="Tiny Tweaks">
+
+        <h2 class="subtitulo">Off Canvas</h2>
+        <p class="testo">
+          <br>
+          El patrón Off canvas coloca contenido menos usado (tal vez menús de
+          navegación o de apps) fuera de la pantalla y solo lo muestra cuando
+          el tamaño de la pantalla es suficientemente grande. <br><br>
+          En las pantallas más pequeñas, el acceso al contenido es posible con
+          solo a un clic. <br><br>
+          En lugar de que el contenido se apile verticalmente, se usa una
+          declaración transform: translate(-250px, 0) para ocultar dos de los div
+          de contenido fuera de la pantalla mediante la propiedad. <br><br>
+          Se usa JavaScript para mostrar los divs agregando una clase abierta al
+          elemento para hacerlo visible. A medida que se ensancha la pantalla, el
+          posicionamiento fuera de esta se elimina de los elementos y estos se
+          muestran dentro de la ventana de visualización visible. <br><br>
+          Hay que tener en cuenta que la función flex-flow: row nowrap de flexbox no
+          es compatible con Safari para iOS 6 y el navegador de Android por lo que se
+          debe recurrir al posicionamiento absoluto. <br><br>
+        </p>
+        <img src="img/offcanvas.png" alt="Off Canvas">
+
+      </article>
+
+      <article class="tema" id="unidades">
+        <h1 class="titulos">Unidades de medida</h1>
+        <p class="testo">
+          <br>
+          Las medidas en CSS se emplean, entre otras cosas,
+          para definir la altura, anchura y márgenes de los
+          elementos y para establecer el tamaño de letra del
+          texto. <br> <br>
+          Todas las medidas se indican como un valor numérico
+          entero o decimal seguido de una unidad de medida (sin
+          ningún espacio en blanco entre el número y la unidad
+          de medida). <br><br>
+          CSS divide las unidades de medida en dos grupos:
+          absolutas y relativas. <br><br>
+          Las unidades absolutas establecen de forma completa
+          el valor de una medida, por lo que su valor real es
+          directamente el valor indicado.<br><br>
+          Las medidas relativas definen su valor en relación con
+          otra medida, por lo que para obtener su valor real, se
+          debe realizar alguna operación con el valor indicado. <br><br>
+          Si el valor es 0(cero), la unidad de medida es opcional. <br><br>
+          Si el valor es distinto a 0 (cero) y no se indica ninguna
+          unidad, la medida se ignora completamente.<br><br>
+          Algunas propiedades permiten indicar medidas
+          negativas, aunque habitualmente sus valores son
+          positivos. Si el valor decimal de una medida es inferior
+          a 1, se puede omitir el 0 de la izquierda (0.5em es
+          equivalente a .5em). <br><br>
+        </p>
+        <h2 class="subtitulo">Unidades de longitud absoluta</h2>
+        <img src="img/unidades absolutas.png" alt="">
+        <br>
+        <br>
+        <h2 class="subtitulo">Unidades de longitud relativas</h2>
+        <img src="img/unidades relativas.png" alt="">
+      </article>
+
+      <article class="tema" id="normalize">
+        <h1 class="titulos">Reset y Normalize</h1>
+        <h2 class="subtitulo">User Agent</h2>
+        <p class="testo">
+          <br>
+          Un user-agent es una aplicación informática que
+          funciona como cliente en un protocolo de red. <br><br>
+          El nombre se aplica generalmente para referirse a
+          aquellas aplicaciones que acceden a la World
+          Wide Web. <br><br>
+          Los agentes de usuario que se
+          conectan a la Web pueden ser
+          desde navegadores web hasta
+          los web crawler de los
+          buscadores, pasando por
+          teléfonos móviles, lectores de
+          pantalla y navegadores en
+          Braille usados por personas con
+          discapacidades. <br><br>
+        </p>
+
+        <h2 class="subtitulo">Reset CSS</h2>
+        <p class="testo">
+          <br>
+          El consorcio W3C, junto con su especificación de
+          CSS 2.1 del 23 de abril de 2009, publicó en su
+          recomendación, un valor por defecto para cada
+          propiedad de CSS que deberían adoptar los
+          agentes de usuario. <br><br>
+          Sin embargo, algunos navegadores hicieron caso
+          omiso a sus indicaciones, los diseñadores web se
+          han visto obligados a recurrir al uso de trucos para
+          garantizar la correcta visualización en la mayoría
+          de navegadores. <br><br>
+          La respuesta está en el restablecimiento de CSS:
+          básicamente, una manera de mantener los
+          resultados lo más universales posible al eliminar
+          cualquier regla y omisión basadas en el navegador
+          antes de que se aplique su CSS. <br><br>
+          Los Reset CSS son unas hojas de estilo en cascada
+          que se suelen incluir en un documento HTML, para
+          minimizar las diferencias visuales que se dan al
+          mostrar una misma página web, en diferentes
+          navegadores. <br><br>
+          Esto porque cada navegador implementa su hoja
+          de estilos propia e interna, con determinados
+          valores por defecto, que no siempre siguen la
+          recomendación de la organización W3C. <br><br>
+          Hay varios Reset que se pueden utilizar:
+          El reset de Tantek <br>
+          El reset de Trípoli<br>
+          El reset de Erik Meyer<br>
+        </p>
+        <h2 class="subtitulo">Normalize CSS</h2>
+        <p class="testo">
+          <br>
+          Normalize es un archivo CSS cuyo objetivo es
+          mantener los estilos similares en los navegadores,
+          porque cada navegador agrega sus propios estilos
+          por defecto. Por ejemplo suelen agregar distintos
+          paddings, margins, font-sizes,etc. <br><br>
+          Normalize CSS regulariza estos estilos y hace que
+          el proyecto se vea igual independientemente del
+          navegador donde se visualice. Además está
+          preparado para adaptarse completamente a
+          HTML5. <br><br>
+          A diferencia de algunos CSS reset, “normalize”
+          preserva los valores por defecto de los
+          navegadores. <br>
+          Además también corrige errores e inconsistencias
+          de los navegadores. <br>
+          Normaliza estilos para una amplia gama de
+          elementos HTML. <br>
+          Incluso mejora la usabilidad con mejoras sutiles.
+        </p>
+      </article>
+
+      <article class="tema" id="svg">
+        <h1 class="titulos">SVG</h1>
+        <p class="testo">
+          Gráficos vectoriales escalables (SVG) es un lenguaje de marcado XML para describir gráficos vectoriales en dos dimensiones. Básicamente, es a los gráficos lo que HTML es al texto. <br><br>
+          SVG es un estándar Web abierto basado en texto. Está expresamente diseñado para trabajar con otros estándares web como CSS, DOM, y SMIL.
+        </p>
+        <img class="svg" src="img/carpeta.svg" alt="SVG image">
+      </article>
+
+      <footer>
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social">
+          <li><a href="https:facebook.com"><ion-icon name="logo-facebook"></ion-icon></a></li>
+          <li><a href="https:twitter.com"><ion-icon name="logo-twitter"></ion-icon></a></li>
+          <li><a href="https:linkedin.com"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a href="https:instagram.com"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#tipografia">principio de pagina</a></li>
+        </ul>
+        <p>©2021 López José Ignacio | Todos los derechos reservados</p>
+      </footer>
+      
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </section>
+
+  </body>
+</html>

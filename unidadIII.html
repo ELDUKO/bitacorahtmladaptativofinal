@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BITACORA UNIDAD III.</title>
+    <link rel="stylesheet" href="css/estilos1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+    <section class="eltodo">
+        <div class="wrapper">
+            <nav>
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content">
+                    <div class="logo"><a href="#">BITÁCORA</a></div>
+                    <ul class="links">
+                        <li>
+                            <a href="index.html" class="desktop-link">Unidad I</a>
+                            <input type="checkbox" id="show-features">
+                            <label for="show-features">Unidad I</label>
+                            <ul>
+                                <li><a href="index.html">Propiedad Position</a></li>
+                                <li><a href="index.html">Referenciar con CSS</a></li>
+                                <li><a href="index.html">Especificidad</a></li>
+                                <li><a href="index.html">Animacion con CSS</a></li>
+                                <li><a href="index.html">JS conceptos básicos</a></li>
+                                <li><a href="index.html">DOM HTML</a></li>
+                                <li><a href="index.html">Encontrar HTML con JS</a></li>
+                                <li><a href="index.html">Propiedad Style</a></li>
+                                <li><a href="index.html">Eventos con JS</a></li>
+                                <li><a href="index.html">Classlist</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="desktop-link">Unidad II</a>
+                            <input type="checkbox" id="show-unit">
+                            <label for="show-unit">Unidad II</label>
+                            <ul>
+                                <li><a href="UnidadII.html">Tipografía Responsive</a></li>
+                                <li><a href="UnidadII.html">Formularios Responsivos</a></li>
+                                <li><a href="UnidadII.html">Look & Feel</a></li>
+                                <li><a href="UnidadII.html">Patrones de RWD</a></li>
+                                <li><a href="UnidadII.html">Unidades de medida</a></li>
+                                <li><a href="UnidadII.html">Reset y Normalize</a></li>
+                                <li><a href="UnidadII.html">SVG</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="#" class="desktop-link">Unidad III</a>
+                            <input type="checkbox" id="show-services">
+                            <label for="show-services">Unidad III</label>
+                            <ul>
+                                <li><a href="#mobile">Mobile First</a></li>
+                                <li><a href="#padre">Módulo Flexbox-Padre</a></li>
+                                <li><a href="#hijos">Módulo Flexbox-Hijos</a></li>
+                                <li><a href="#variables">Variables CSS</a></li>
+                                <li><a href="#frameworks">Frameworks</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <article class="tema" id="mobile">
+            <h1 class="titulos">Mobile First</h1>
+            <p class="testo">
+                Puede pensar que concentrarse en la experiencia móvil primero suena inútil, ya que estamos más
+                acostumbrados a tratar con sitios de escritorio, y seguramente debemos considerar la gama completa de
+                funciones para la experiencia general en escritorio, móvil, etc., antes de emparejar se reduce a una
+                experiencia móvil que es más simple, más ágil o lo que sea. Esto suena cierto, sí, pero en nuestra
+                experiencia, el móvil primero se trata más de tener la implementación móvil como una capa predeterminada
+                sobre la que construir. La propuesta del Mobile First o el darle preferencia a las páginas web
+                desarrolladas para
+                una mejor accesibilidad en dispositivos moviles inicia dado que Luke Wroblewski (director de productos
+                de Google) publica un libro
+                llamado "Mobile First". En este denota que su propuesta era crear un sitio web pensado para dispositivos
+                móviles primero y después ajustarlo para
+                la computadora, es decir, introducia un concepto de responsividad con un proceso opuesto al que llevamos
+                a cabo cuando desarrollamos webs para computadoras.
+                así mismo se considera al Mobile First como una filosofía que perfecciona el proceso de diseño de
+                cualquier sitio web, buscando mejorar el diseño web adaptable.
+                Una de las principales ventajas que tiene el mobile first es que un sitio web diseñado específicamente
+                para dispositivos moviles se adapta con mucha mayor facilidad
+                a la computadora.
+            </p>
+            <h2 class="subtitulo">Restricciones móviles</h2>
+            <p class="testo">
+                <br>
+                Ya hemos mencionado el hecho de que los móviles generalmente tienen menos memoria, potencia de
+                procesamiento y ancho de banda que otros dispositivos (aunque tenga en cuenta que los televisores
+                inteligentes también suelen tener una potencia bastante baja). También tienen menos tamaño de ventana de
+                visualización disponible. Por lo tanto, además de dividir el contenido en diferentes vistas y
+                simplificar la interfaz y el contenido en cada vista de su aplicación para dispositivos móviles tanto
+                como sea posible, también es una buena idea no incluir efectos visuales como sombras, animaciones y
+                degradados. Al menos debe considerarlo como una opción, especialmente si experimenta un rendimiento
+                lento o lento cuando su aplicación se ejecuta en un dispositivo móvil. <br>
+                <br>
+
+            </p>
+        </article>
+
+        <article class="tema" id="padre">
+            <h1 class="titulos">MODULO FLEXBOX PADRE</h1>
+            <p class="testo">
+                Flexbox es un método de diseño de página unidimensional para compaginar elementos en filas o columnas.
+                Los elementos de contenido se ensanchan para rellenar el espacio adicional y se encogen para caber en
+                espacios más pequeños.
+                El diseño CSS Flexbox es un módulo de CSS que define un modelo de caja, optimizado para el diseño de
+                interfaces de usuario. En el diseño flex, los nodos hijo se pueden distribuir en dirección vertical u
+                horizontal y se pueden "flexibilizar" sus tamaños, bien sea rellenando el espacio disponible o
+                encogiéndose para evitar salirse del contorno del nodo padre. Se puede manipular fácilmente tanto la
+                alineación horizontal como la vertical, de los nodos hijo. La anidación de estas cajas (horizontal
+                dentro de vertical o vertical dentro de horizontal) se puede usar para construir diseños en dos
+                dimensiones.
+            </p>
+
+            <h2 class="subtitulo">Propiedades de alineación</h2>
+            <p class="testo">
+                Las propiedades align-content, align-self, align-items y justify-content aparecieron inicialmente en la
+                especificación de Flexbox, pero ahora están definidas en Alineación de cuadro y la especificación de
+                Flexbox las refiere a la Especificación de alineación de cuadro para definiciones actualizadas. <br><br>
+            </p>
+            <img class="flex" src="img/flexbox.png" alt="">
+            <h2 class="subtitulo">Especificar qué elementos colocar como cajas flexibles</h2>
+            <p class="testo">
+                Para comenzar, vamos a seleccionar qué elementos se van a presentar como cajas flexibles. Para ello,
+                establecemos un valor especial de displayen el elemento padre de los elementos que desea editar. En este
+                caso, queremos compaginar los elementos &lt;article>, por lo que lo establecemos en &lt;section>(que se
+                convierte en un contenedor flexible)
+            </p>
+        </article>
+
+        <article class="tema" id="hijos">
+            <h1 class="titulos">MODULO FLEXBOX HIJOS</h1>
+            <p class="testo">
+                Cuando los elementos se presentan como cajas flexibles, se distribuyen con respecto a dos ejes: <br><br>
+
+                El eje principal ( eje principal ) es el eje que corre en la dirección en que se colocan los elementos
+                flexibles (por ejemplo, según se dispone de las filas en una página o hacia abajo según se dispone de
+                las columnas en una página). El inicio y el final de este eje se denominan inicio principal ( inicio
+                principal ) y final principal ( final principal ). <br><br>
+                El eje transversal ( eje transversal ) Es El eje Que corre perpendicular a la Dirección en La que se
+                colocan Los Elementos flexibles. El inicio y el final de of this eje se denominan inicio transversal (
+                cross inicio ) y Extremo cruzado ( extremo cruz ). <br><br>
+                El elemento padre que tiene establecido display: flex(el elemento &lt;section>en nuestro ejemplo) se
+                llama
+                contenedor flexible . <br><br>
+                Los elementos que se presentan como cajas flexibles dentro del contenedor flexible se denominan
+                elementos flexibles
+        </article>
+
+        <article class="tema" id="variables">
+            <h1 class="titulos">VARIABLES CSS</h1>
+            <p class="testo">
+                <br>
+                En CSS, las propiedades personalizadas (también conocidas como variables) son entidades que contienen
+                valores específicos que se pueden volver a utilizar en un documento. <br> <br>
+                Los sitios web complejos tienen cantidades muy grandes de CSS, a menudo con una gran cantidad de valores
+                repetidos. Por ejemplo, el mismo color se puede utilizar en cientos de lugares diferentes, lo cual
+                requiere buscar y reemplazar globalmente si necesitamos cambiar ese color. <br>
+                Las variables CSS permiten que un valor se almacene en un lugar y luego se haga referencia en varios
+                otros lugares. Se declaran con la siguiente sintaxis: <br> <br>
+                < lapso de estilo=" color: # BA335F; "> --nombre </ envergadura> : valor; <br> <br> Y se invocan
+                mediante la función
+                < Lapso de estilo=" color: # BA335F; "> var () </ envergadura> , por example: <br> <br> Propiedad: <
+                    lapso de estilo=" color: # BA335F; "> var () </ envergadura> (--nombre);
+                <br> <br> <br>
+                Para declarar propiedades personalizadas (variables) se debe usar un nombre que comience con dos guiones
+                (-), y un valor que puede ser cualquier valor válido de CSS. <br> <br> Como any otra propiedad, se
+                escribe
+                Dentro de las reglas CSS, por example: <br> <br> Elemento { < lapso de estilo=" color: # BA335F; ">
+                    --main-color: </ envergadura> rojo;}
+                <br> <br>
+                Los nombres de las variables de CSS distinguen Entre mayúsculas Minúsculas Y, por EJEMPLO: < br>
+                    < br>
+                        --Mi color <br> <br> --Mi color <br> <br> Son las variables Distintas.
+            </p>
+
+
+        </article>
+
+        <article class="tema" id="frameworks">
+            <h1 class="titulos">FRAMEWORKS</h1>
+
+            <h2 class="subtitulo">
+                Tailwind <br><br>
+            </h2>
+            <p class="testo">
+                TailwindCSS es un frameworkCSS de Utility-Firstpara crear rápida y fácilmente
+                interfaces de usuario personalizadas sin olvidar cuales son los elementos en CSS. Es un frameworkCSS de
+                bajo nivel altamente personalizable.
+                <br><br>
+                Tailwind no impone especificaciones de diseño, sino que reúne
+                pequeños componentes para construir una interfaz de usuario única. Toma un archivo CSS "sin procesar",
+                procesa este archivo CSS sobre un archivo de configuración y generar una salida. <br><br>
+            </p>
+            <img src="img/tailwind.jpg" alt="" class="work">
+            <h2 class="subtitulo">
+                UIKIT <br><br>
+            </h2>
+            <p class="testo">
+                Un kit de interfaz de usuario es un conjunto de archivos que contiene componentes de la interfaz de
+                usuario como fuentes, iconos, documentación y archivos HTML / CSS. Pueden ser bastante simples con
+                algunos botones y componentes de diseño, o extremadamente robustos con conmutadores que cambian las
+                fuentes, los colores y las formas sobre la marcha.​
+                <br><br>
+                Se utilizan comúnmente para el diseño de dispositivos móviles o la creación de prototipos, en gran parte
+                porque dos de los sistemas operativos más importantes, iOS y Android, tienen sistemas de diseño
+                robustos, bien documentados y con un gran soporte. ​<br><br>
+            </p>
+            <img src="img/uikit.png" alt="" class="work">
+            <h2 class="subtitulo">
+                SKELETON <br><br>
+            </h2>
+            <p class="testo">
+                Skeleton fue construido usando Sublime Text 3 y diseñado con Sketch.Skeleton fue creado por Dave Gamache
+                para una mejor web.Dave es un diseñador e ingeniero con más de una década trabajando con nuevas empresas
+                como Twitter, Netflix, Medium y Dropbox. Dirige Producto y Diseño en WelcomeLend, además de ser
+                copropietario de Bootstrap, uno de los proyectos de código abierto más populares del mundo ​<br><br>
+            </p>
+            <img src="img/skeleton.png" alt="" class="work">
+            <h2 class="subtitulo">
+                Material design lite <br><br>
+            </h2>
+            <p class="testo">
+                Material Design Lite le permite agregar una apariencia de Material Design a sus sitios web. No se basa
+                en ningún marco de JavaScript y tiene como objetivo optimizar para el uso en varios dispositivos,
+                degradar con garacia en los navegadores más antiguos y ofrecer una experiencia a la que se puede acceder
+                de inmediato.
+                <br><br> Google buscaba la unificación del diseño tanto en los entornos de escritorio como web.Material
+                Design Lite es una biblioteca de componentes, basada en la guía de estilo de material design.
+                <br><br> Los componentes MDL se crean con CSS, JavaScript y HTML. Puede utilizar los componentes para
+                construir páginas web y aplicaciones web que sean atractivas, coherentes y funcionales. Las páginas
+                desarrolladas con MDL se adherirán a los principios de diseño web moderno, como la portabilidad del
+                navegador, la independencia del dispositivo y la de gradación elegante.
+                <br><br>
+            </p>
+            <img src="img/material design.png" alt="" class="work">
+            <h2 class="subtitulo">
+                milligram <br><br>
+            </h2>
+            <p class="testo">
+                Milligram es un simple y ligero CSS framework para hacer sitios web. Es ideal para los
+                desarrolladores ¨front end¨que necesitan un diseño ¨agnostic framework¨. Milligram
+                provee de una configuración mínima de estilos para un rápido y limpio punto de inicio.
+                Especialmente diseñado para un mejor rendimiento y mayor productividad con menos
+                propiedades para resetear, resultando en código más limpio; Milligram es una herramienta
+                de código abierto. <br><br>
+                Milligram tiene 8.21K estrellas en GitHub y 482 GitHub forks. Nos incluye tipografía,
+                botones, listas, formularios, grids, tablas y otros elementos básicos. También, hace uso de
+                CSS Flexible Box Layout Module standard (Flexbox) e incluye archivos Sass. <br><br>
+            </p>
+            <img src="img/milligram.png" alt="" class="work">
+            <br><br>
+        </article>
+
+
+        <footer>
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social">
+                <li><a href="https:facebook.com">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li><a href="https:twitter.com">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                <li><a href="https:linkedin.com">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                <li><a href="https:instagram.com">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+            </ul>
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#tipografia">principio de pagina</a></li>
+            </ul>
+            <p>©2021 López José Ignacio | Todos los derechos reservados</p>
+        </footer>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    </section>
+</body>
+
+</html>
